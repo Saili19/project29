@@ -56,13 +56,13 @@ function setup() {
 	 
 	block16 = new Block(480,420,30,40);
 
-	polygon = Bodies.circle(150,200,150);
+	polygon = Bodies.circle(100,130,20,40);
 	World.add(world ,polygon);
     
 	
 	
 
-	slingshot = new Slingshot(this.polygon, {x:290,y:390} );
+	slingshot = new Slingshot(this.polygon, {x:200,y:390} );
 
 	Engine.run(engine);
   
@@ -107,7 +107,7 @@ function draw() {
 
 
 function mouseDragged(){
-	Matter.Body.setPosition(polygon.body, {x:mouseX , y:mouseY});
+	Matter.Body.setPosition(this.polygon, {x:mouseX , y:mouseY});
   }
   
   function mouseReleased(){

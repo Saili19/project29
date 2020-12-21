@@ -2,7 +2,7 @@ class Block {
     constructor(x, y, width, height) {
       var options = {
            restitution : 0.8,
-          density: 1,
+          density: 0.7,
           friction :0.4,
           isStatic:false
    
